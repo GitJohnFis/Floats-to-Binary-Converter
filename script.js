@@ -3,7 +3,7 @@ const result = document.getElementById("result");
 const checkMessageButton = document.getElementById("check-message-btn");
 
 const helpRegex = /please help|assist me|mentor me/i;
-const dollarRegex = /[0-9]+ hundred|thousand|grand|million|billion|zillion|bazillion dollars/i;
+const dollarRegex = /[0-9]+ hundred|thousand|grand|million|billion|zillion|bazillion|crypto|bitcoin|ethereum|coin dollars/i;
 
 const denyList = [helpRegex, dollarRegex];
 
