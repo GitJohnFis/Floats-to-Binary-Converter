@@ -9,8 +9,8 @@ const stockRegex = /(?:^|\s)[s5][t7][o0][c{[(]k [a@4]l[e3]r[t7](?:$|\s)/i;
 const dearRegex = /(?:\s|^)d[e3][a@4]r fr[i1|][e3]nd(?:\s|$)/i;
 /* More regex filters for niche subjects*/
 const urgencyRegex = /(?:\s|^)[a@4]c[t7] n[o0]w|L[i1|]m[i1|][t7][e3]d [t7][i1|]m[e3] [o0]ff[e3]r|Urg[e3]n[t7]|F[i1|]n[a@4]l n[o0]t[i1|]c[e3](?:$|\s)/i;
-const 
-const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex, dearregex, urgencyRegex];
+const hackedRegex = /C[o0]ngr[a@4][t7]ul[a@4][t7][i1|][o0]ns, y[o0]u'v[e3] w[o0]n!|Exclus[i1|]v[e3] d[e3][a@4]l|Cl[a@4][i1|]m y[o0]ur pr[i1|]z[e3]|Sp[e3]c[i1|][a@4]l [o0]ff[e3]r just f[o0]r y[o0]u/i;
+const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex, dearregex, urgencyRegex, hackedRegex];
 
 const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
